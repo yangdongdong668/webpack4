@@ -5,8 +5,8 @@ import(/* webpackChunkName: 'a'*/ './a').then(function(a){
 import(/* webpackChunkName: 'b'*/ './b').then(function(b){
     console.log(b);
 })
-import(/* webpackChunkName: 'use-lodash'*/ 'lodash').then(function(_){
-    console.log(_.json(['1','2']));
+import(/* webpackChunkName: 'lodash'*/ 'lodash').then(function(_){
+    console.log(_.join(['1','2']));
 })
 
 export default 'page'
